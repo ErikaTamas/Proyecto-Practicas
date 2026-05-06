@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio personal</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     <header>
@@ -11,40 +12,82 @@
         <p>Estudiante de DAW en el Juan Bosco</p>
     </header>
 
-    <section>
-        <h2>Sobre mí</h2>
-        <p>Tengo 18 años y vivo en Quintanar de la Orden, estoy estudiando DAW y tengo pensado hacer tambien DAM y una especializacion de videojuegos. Mi plan es trabajar en el sector de los videojuegos.</p>
+    <main>
+        <article>
+            <section id="sobreMi">
+                <h2>Sobre mí</h2>
+                <div class="contenedor">
+                    <div class="col-izquierda">
+                        <p>Tengo 18 años y vivo en Quintanar de la Orden. 
+                        Actualmente estoy cursando el primer año de Desarrollo de Aplicaciones Web (DAW) 
+                        en el Juan Bosco. Me apasiona el mundo de la programacion.</p>
+                        
+                        <p>Mi objetivo es dominar las bases del desarrollo frontend y backend, 
+                        para después continuar mis estudios con DAM y finalmente 
+                        especializarme en el motor de videojuegos que más me guste. Mi gran sueño es 
+                        formar parte de un equipo de desarrollo de videojuegos profesional.</p>
+                        
+                        <h3>Hobbies</h3>
+                        <ul>
+                            <li>Jugar videojuegos</li>
+                            <li>Ver películas</li>
+                            <li>Leer libros de fantasía, detectives y romanticos</li>
+                        </ul>
+                    </div>
 
-        <h3>Hobbies</h3>
-        <ul>
-            <li>Jugar videojuegos</li>
-            <li>Ver peliculas</li>
-            <li>Leer</li>
-            <li>Escribir historias</li>
-        </ul>
+                    <div class="col-derecha">
+                        <p class="tag-foto">Esta soy yo</p>
+                        <img src="yo.png" alt="Erika Tamas" class="foto-perfil">
+                    </div>
+                </div>
+            </section>
+        </article>
+        
 
-        <h3>Mas sobre mi</h3>
-        <p>Esta soy yo</p>
-        <img src="yo.png" width="200">
-    </section>
+        <section>
+            <h2>Habilidades Laborales</h2>
+            <p>Hasta ahora no he estado en el sector laboral salvo por practicas pero puedo defenderme en algunos campos:</p>
+            <ul>
+                <li>Gestion de Bases de Datos (Oracle SQL)</li>
+                <li>Uso de lenguajes de programacion: java, python y php</li>
+                <li>Desarrollo de estructuras HTML</li>
+                <li>Idiomas: Ingles</li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>Habilidades Laborales</h2>
-        <p>Hasta ahora no he estado en el sector laboral salvo por practicas pero puedo defenderme en algunos campos:</p>
-        <ul>
-            <li>Gestion de Bases de Datos (Oracle SQL)</li>
-            <li>Uso de lenguajes de programacion: java, python y php</li>
-            <li>Desarrollo de estructuras HTML</li>
-            <li>Idiomas: Ingles</li>
-        </ul>
-    </section>
+        <section id="contacto">
+            <h2>Preguntas</h2>
+            <p>Tienes alguna pregunta? no dudes en escribirmelas!</p>
+        <form>
+            <div class="nombre">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+            </div>
 
-    <section>
-        <h2>Contacto</h2>
-        <p>Puedes contactarme a mi correo <a href="https://mail.google.com/mail/u/1/?pli=1#inbox" target="_blank">erikaluciatamas@icloud.com</a></p>
-    </section>
+            <div class="email">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
 
+            <label for="email">Contraseña</label>
+            <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="pregunta">
+            <label for="mensaje">Pregunta</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+            <h2>Contacto</h2>
+            <p>Si lo prefieres puedes contactarme a mi correo <a href="https://mail.google.com/mail/u/1/?pli=1#inbox" target="_blank">erikaluciatamas@icloud.com</a></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; Copyright 2026</p>
+    </footer>
     
-
 </body>
 </html>
