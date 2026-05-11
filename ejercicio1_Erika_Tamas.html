@@ -3,16 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio personal</title>
+    <title>Portafolio personal - Erika Tamas</title>
     <link rel="stylesheet" href="estilos.css">
+    <script src="javaScript.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Erika Tamas</h1>
-        <p>Estudiante de DAW en el Juan Bosco</p>
+    <header class="main-header">
+        <div class="header-content">
+            <div class="branding">
+                <h1>Erika Tamas</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobreMi">Sobre mí</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><button id="theme-toggle" class="btn-theme">Modo Oscuro</button></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
+    <main id="inicio">
         <article>
             <section id="sobreMi">
                 <h2>Sobre mí</h2>
@@ -20,18 +33,17 @@
                     <div class="col-izquierda">
                         <p>Tengo 18 años y vivo en Quintanar de la Orden. 
                         Actualmente estoy cursando el primer año de Desarrollo de Aplicaciones Web (DAW) 
-                        en el Juan Bosco. Me apasiona el mundo de la programacion.</p>
+                        en el Juan Bosco. Me apasiona el mundo de la programación.</p>
                         
                         <p>Mi objetivo es dominar las bases del desarrollo frontend y backend, 
                         para después continuar mis estudios con DAM y finalmente 
-                        especializarme en el motor de videojuegos que más me guste. Mi gran sueño es 
-                        formar parte de un equipo de desarrollo de videojuegos profesional.</p>
+                        especializarme en el motor de videojuegos que más me guste.</p>
                         
                         <h3>Hobbies</h3>
                         <ul>
                             <li>Jugar videojuegos</li>
                             <li>Ver películas</li>
-                            <li>Leer libros de fantasía, detectives y romanticos</li>
+                            <li>Leer libros de fantasía, detectives y románticos</li>
                         </ul>
                     </div>
 
@@ -42,52 +54,75 @@
                 </div>
             </section>
         </article>
-        
 
         <section>
             <h2>Habilidades Laborales</h2>
-            <p>Hasta ahora no he estado en el sector laboral salvo por practicas pero puedo defenderme en algunos campos:</p>
+            <p>Hasta ahora no he estado en el sector laboral salvo por prácticas pero puedo defenderme en algunos campos:</p>
             <ul>
-                <li>Gestion de Bases de Datos (Oracle SQL)</li>
-                <li>Uso de lenguajes de programacion: java, python y php</li>
+                <li>Gestión de Bases de Datos (Oracle SQL)</li>
+                <li>Uso de lenguajes de programación: Java, Python y PHP</li>
                 <li>Desarrollo de estructuras HTML</li>
-                <li>Idiomas: Ingles</li>
+                <li>Idiomas: Inglés</li>
             </ul>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos Futuros</h2>
+            <div class="flex-proyectos">
+                <div class="proyecto-card">
+                    <h3>Motor de Videojuegos</h3>
+                    <p>Investigación y desarrollo de mecánicas básicas en Unity o Unreal Engine.</p>
+                </div>
+                <div class="proyecto-card">
+                    <h3>Implementar lo estudiado</h3>
+                    <p>Llegar a crear aplicaciones WEB y tambien Multiplataforma</p>
+                </div>
+                <div class="proyecto-card">
+                    <h3>Metas</h3>
+                    <p>Poder ser buena programadora a futuro</p>
+                </div>
+            </div>
         </section>
 
         <section id="contacto">
             <h2>Preguntas</h2>
-            <p>Tienes alguna pregunta? no dudes en escribirmelas!</p>
-        <form>
-            <div class="nombre">
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" required>
-            </div>
+            <p>¿Tienes alguna pregunta? ¡no dudes en escribírmelas!</p>
+            <form>
+                <div class="nombre">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
 
-            <div class="email">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
 
-            <label for="email">Contraseña</label>
-            <input type="password" id="password" name="password" required>
-            </div>
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
 
-            <div class="pregunta">
-            <label for="mensaje">Pregunta</label>
-            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-            </div>
+                <div class="pregunta">
+                    <label for="mensaje">Pregunta</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
 
-            <button type="submit" class="btn-enviar">Enviar</button>
-        </form>
-            <h2>Contacto</h2>
-            <p>Si lo prefieres puedes contactarme a mi correo <a href="https://mail.google.com/mail/u/1/?pli=1#inbox" target="_blank">erikaluciatamas@icloud.com</a></p>
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </form>
+            <h2>Contacto Directo</h2>
+            <p>Si lo prefieres puedes contactarme a mi correo <a href="mailto:erikaluciatamas@icloud.com">erikaluciatamas@icloud.com</a></p>
         </section>
-
     </main>
 
-    <footer>
-        <p>&copy; Copyright 2026</p>
+    <footer class="main-footer">
+        <p>&copy; Copyright 2026 - Erika Tamas</p>
+        <div class="social-section">
+            <span>Sígueme en:</span>
+            <div class="social-buttons">
+                <a href="#" class="btn-social">LinkedIn</a>
+                <a href="#" class="btn-social">GitHub</a>
+                <a href="#" class="btn-social">Instagram</a>
+            </div>
+        </div>
     </footer>
-    
 </body>
 </html>
